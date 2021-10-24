@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<interfaces>
+<cmd name="xpond" type="1" dataref="B742/TCAS/main_mode_sel" pilot_head="cons-1" >
+   <opt name="stdby" value="0" />
+   <opt name="tara" value="1" />
+   <opt name="ta" value="2" />
+   <opt name="xpdr" value="3" />
+</cmd>
+<cmd name="apu_gen1_trip_sw" type="1" dataref="B742/AUX_PWR/APU_GEN1_trip_sw" pilot_head="FE-1" >
+   <opt name="close" value="1" />
+   <opt name="off" value="0" />
+   <opt name="trip" value="-1" />
+</cmd>
+<cmd name="cvr_test" type="1" dataref="B742/OVHD/voice_rec_test_button" pilot_head="OVERHEAD" >
+   <opt name="push" value="1" />
+   <opt name="release" value="0" />
+</cmd>
+<cmd name="lower_cargo_heatA_sw" type="1" dataref="B742/FE/LOW_cargo_test_button_A" >
+   <opt name="off" value="0" />
+   <opt name="test" value="1" />
+</cmd>
+
+<cmd name="galley_chiller" type="2" dataref="B742/FE/galley_chiller_sw" size_a="3" writable="1" pilot_head="FE-1" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="recirculating_fans" type="2" dataref="B742/AIR_COND/recilc_fan_zones_sw" size_a="4" pilot_head="FE-2" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="fire_detectB_sw" type="1" dataref="B742/FIRE/fire_test_sw_B" >
+   <opt name="firetest" value="1" />
+   <opt name="off" value="0" />
+   <opt name="faulttest" value="-1" />
+</cmd>
+<cmd name="apu_bleed_air" type="1" dataref="B742/APU/APU_bleed_air_sw" pilot_head="FE-1" >
+   <opt name="close" value="0" />
+   <opt name="open" value="1" />
+</cmd>
+
+<cmd name="nav_lights" type="1" dataref="B742/ext_light/NAV_sw"  >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+
+<cmd name="beacon" type="1" dataref="B742/ext_light/beacon_sw"  >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+
+<cmd name="strobe" type="1" dataref="B742/ext_light/strobe_sw"  >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+
+
+
+
+<cmd name="logo_lights" type="1" dataref="B742/ext_light/logo_sw"  >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+
+
+
+
+
+
+<cmd name="lower_cargo_heat_both_sw" type="1" dataref="B742/FE/LOW_cargo_test_button_both" >
+   <opt name="off" value="0" />
+   <opt name="test" value="1" />
+</cmd>
+<cmd name="galley_control_gen" type="1" dataref="B742/FE/galley_control_gen_mode_sw" writable="1" pilot_head="FE-1" >
+   <opt name="norm" value="1" />
+   <opt name="ovrd" value="2" />
+   <opt name="reduced" value="0" />
+</cmd>
+
+<cmd name="start_valve_cap" type="1" dataref="B742/OVHD/start_valve_cap" pilot_head="OVERHEAD" >
+   <opt name="close" value="0" />
+   <opt name="open" value="1" />
+</cmd>
+
+<cmd name="start_valve_sw" type="1" dataref="B742/OVHD/start_valve_sw" pilot_head="OVERHEAD" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+
+
+<cmd name="engine_ignition_1" type="2" size_a="4"  dataref="B742/OVHD/engine_ignition_sys_1" pilot_head="OVERHEAD" >
+   <opt name="off" value="0" />
+   <opt name="gndstart" value="1" />
+   <opt name="fltstart" value="-1" />
+</cmd>
+
+<cmd name="engine_ignition_2" type="2" size_a="4"  dataref="B742/OVHD/engine_ignition_sys_2" pilot_head="OVERHEAD" >
+   <opt name="off" value="0" />
+   <opt name="gndstart" value="1" />
+   <opt name="fltstart" value="-1" />
+</cmd>
+
+<cmd name="fuel_cut_detent_1" type="1" dataref="B742/controls/fuel_cut_off_detent_1"  />
+<cmd name="fuel_cut_off_1" type="1" dataref="B742/controls/fuel_cut_off_pos_1"  >
+   <opt name="cutoff" value="0" />
+   <opt name="rich" value="0.49" />
+   <opt name="idle" value="1" />
+</cmd>
+<cmd name="fuel_cut_detent_2" type="1" dataref="B742/controls/fuel_cut_off_detent_2"  />
+<cmd name="fuel_cut_off_2" type="1" dataref="B742/controls/fuel_cut_off_pos_2"  >
+   <opt name="cutoff" value="0" />
+   <opt name="rich" value="0.49" />
+   <opt name="idle" value="1" />
+</cmd>
+<cmd name="fuel_cut_detent_3" type="1" dataref="B742/controls/fuel_cut_off_detent_3"  />
+<cmd name="fuel_cut_off_3" type="1" dataref="B742/controls/fuel_cut_off_pos_3"  >
+   <opt name="cutoff" value="0" />
+   <opt name="rich" value="0.49" />
+   <opt name="idle" value="1" />
+</cmd>
+<cmd name="fuel_cut_detent_4" type="1" dataref="B742/controls/fuel_cut_off_detent_4"  />
+<cmd name="fuel_cut_off_4" type="1" dataref="B742/controls/fuel_cut_off_pos_4"  >
+   <opt name="cutoff" value="0" />
+   <opt name="rich" value="0.49" />
+   <opt name="idle" value="1" />
+</cmd>
+
+
+<cmd name="no_smoking" type="1" dataref="B742/OVHD/no_smoking_button" pilot_head="OVERHEAD" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="fasten_belts" type="1" dataref="B742/OVHD/fasten_belts" pilot_head="OVERHEAD" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+
+
+
+<cmd name="galley_control_fan" type="1" dataref="B742/FE/galley_control_lav_fan_sw" writable="1" pilot_head="FE-1" >
+   <opt name="off" value="0" />
+   <opt name="on" value="2" />
+   <opt name="auto" value="1" />
+</cmd>
+<cmd name="squib_test_sw" type="1" dataref="B742/FIRE/squib_test_sw" >
+   <opt name="rightbottle" value="1" />
+   <opt name="off" value="0" />
+   <opt name="leftbottle" value="-1" />
+</cmd>
+<cmd name="chocks" type="1" dataref="sim/flightmodel/controls/parkbrake" pilot_head="FE-1" >
+</cmd>
+<cmd name="aux_power_1" type="1" dataref="B742/AUX_PWR/EXT_PWR_1_sw" pilot_head="FE-1" >
+   <opt name="close" value="1" />
+   <opt name="off" value="0" />
+   <opt name="grdserv" value="-1" />
+</cmd>
+<cmd name="air_pump" type="2" dataref="B742/HYD/air_pump_sw" size_a="3" pilot_head="FE-2" >
+   <opt name="continuous" value="-1" />
+   <opt name="off" value="0" />
+   <opt name="auto" value="1" />
+</cmd>
+<cmd name="wx_radar" type="1" dataref="B742/radar/mode_sel" pilot_head="cons-1" >
+   <opt name="off" value="0" />
+</cmd>
+<cmd name="compass_mode" type="2" dataref="B742/OVHD/compass_mode_sw" size_a="2" pilot_head="OVERHEAD" >
+   <opt name="dg" value="0" />
+   <opt name="slave" value="1" />
+</cmd>
+<cmd name="window_heat_sw_2L" type="1" dataref="B742/OVHD/window_heat_sw_2L" pilot_head="OVERHEAD" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="probe_heater_L" type="1" dataref="B742/OVHD/probe_heater_L" pilot_head="OVERHEAD" >
+   <opt name="test" value="-1" />
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="stdby_power" type="1" dataref="B742/ELEC/standby_power_sw" pilot_head="FE-1" >
+   <opt name="normal" value="1" />
+   <opt name="manual" value="-1" />
+   <opt name="off" value="0" />
+</cmd>
+<cmd name="probe_heater_R" type="1" dataref="B742/OVHD/probe_heater_R" pilot_head="OVERHEAD" >
+   <opt name="test" value="-1" />
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="AUX_power_bus2" type="1" dataref="B742/FE_lamps/AUX_power_on_bus_2" readonly="1" pilot_head="FE-1" >
+</cmd>
+<cmd name="apu_start" type="1" dataref="B742/APU/APU_start_sw" pilot_head="FE-1" >
+   <opt name="start" value="2" />
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+
+<cmd name="bus_gen_close" type="2" dataref="B742/ELEC/bus_gen_close_sw" size_a="4" pilot_head="FE-1" >
+   <opt name="off" value="0" />
+   <opt name="close" value="1" />
+   <opt name="trip" value="-1" />
+</cmd>
+<cmd name="bus_tie_close" type="2" dataref="B742/ELEC/bus_tie_close_sw" size_a="4" pilot_head="FE-1" >
+   <opt name="off" value="0" />
+   <opt name="close" value="1" />
+   <opt name="trip" value="-1" />
+</cmd>
+
+<cmd name="apu_split" type="1" dataref="B742/AUX_PWR/APU_split_sys_sw" pilot_head="FE-1" >
+   <opt name="close" value="1" />
+   <opt name="off" value="0" />
+   <opt name="?" value="-1" />
+</cmd>
+
+
+<cmd name="window_heat_power_test" type="1" dataref="B742/OVHD/window_heat_bower_test_button" pilot_head="OVERHEAD" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="apu_gen1_close_sw" type="1" dataref="B742/AUX_PWR/APU_GEN1_close_sw" pilot_head="FE-1" >
+   <opt name="close" value="1" />
+   <opt name="off" value="0" />
+   <opt name="grdserv" value="-1" />
+</cmd>
+<cmd name="AC2_conn" type="1" dataref="B742/FE_lamps/AUX_AC_conn_2" readonly="1" pilot_head="FE-1" >
+</cmd>
+<cmd name="overrot_test" type="1" dataref="B742/OVHD/overrot_test_sw" pilot_head="OVERHEAD" >
+   <opt name="test" value="1" />
+   <opt name="normal" value="0" />
+</cmd>
+<cmd name="galley_pwr" type="2" dataref="B742/FE/galley_pwr_sw" size_a="4" writable="1" pilot_head="FE-1" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="anti_skid_sw" type="1" dataref="B742/OVHD/anti_skid_on_off_sw" pilot_head="OVERHEAD" >
+   <opt name="on" value="1" />
+   <opt name="off" value="0" />
+</cmd>
+<cmd name="ins_1_mode" type="1" dataref="B742/INS1/main_mode" pilot_head="INS12" >
+   <opt name="tk/gs" value="0" />
+   <opt name="pos" value="3" />
+   <opt name="xtk/tke" value="2" />
+   <opt name="adg/da" value="1" />
+   <opt name="dis/time" value="5" />
+   <opt name="dsrtk/sts" value="7" />
+   <opt name="wind" value="6" />
+   <opt name="way/pt" value="4" />
+</cmd>
+<cmd name="apu_test_A" type="1" dataref="B742/APU/APU_fire_test_A" pilot_head="FE-1" >
+   <opt name="fault" value="-1" />
+   <opt name="off" value="0" />
+   <opt name="fire" value="1" />
+</cmd>
+<cmd name="window_heat_sw_2R" type="1" dataref="B742/OVHD/window_heat_sw_2R" pilot_head="OVERHEAD" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="aux_power_2" type="1" dataref="B742/AUX_PWR/EXT_PWR_2_sw" pilot_head="FE-1" >
+   <opt name="off" value="0" />
+   <opt name="close" value="1" />
+</cmd>
+<cmd name="suppl_vent" type="1" dataref="B742/AIR_COND/suppl_vent_fans_sw" pilot_head="FE-2" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="ins_3_ovh" type="1" dataref="B742/INS3/ovhd_mode" pilot_head="OVERHEAD" >
+   <opt name="stdby" value="1" />
+   <opt name="align" value="2" />
+   <opt name="nav" value="3" />
+   <opt name="att" value="4" />
+   <opt name="off" value="0" />
+</cmd>
+<cmd name="ins_2_ovh" type="1" dataref="B742/INS2/ovhd_mode" pilot_head="OVERHEAD" >
+   <opt name="stdby" value="1" />
+   <opt name="align" value="2" />
+   <opt name="nav" value="3" />
+   <opt name="att" value="4" />
+   <opt name="off" value="0" />
+</cmd>
+<cmd name="air_valves" type="2" dataref="B742/AIR_COND/bleed_air_valves" size_a="4" pilot_head="FE-2" >
+   <opt name="close" value="0" />
+   <opt name="open" value="1" />
+</cmd>
+<cmd name="AC1_conn" type="1" dataref="B742/FE_lamps/AUX_AC_conn_1" readonly="1" pilot_head="FE-1" >
+</cmd>
+<cmd name="ins_1_left_txt" type="1" dataref="B742/INS1/left_text_disp" readonly="1" pilot_head="INS12" >
+</cmd>
+<cmd name="ins_1_ovh" type="1" dataref="B742/INS1/ovhd_mode" pilot_head="OVERHEAD" >
+   <opt name="stdby" value="1" />
+   <opt name="align" value="2" />
+   <opt name="nav" value="3" />
+   <opt name="att" value="4" />
+   <opt name="off" value="0" />
+</cmd>
+<cmd name="lower_cargo_heatB_sw" type="1" dataref="B742/FE/LOW_cargo_test_button_B" >
+   <opt name="off" value="0" />
+   <opt name="test" value="1" />
+</cmd>
+<cmd name="emerg_lights_sw" type="1" dataref="B742/OVHD/emerg_lights_sw" pilot_head="OVERHEAD" >
+   <opt name="on" value="2" />
+   <opt name="off" value="0" />
+   <opt name="armed" value="1" />
+</cmd>
+
+<cmd name="aft_cargo_heat_sw" type="1" dataref="B742/FE/AFT_cargo_heat_sw" >
+   <opt name="normal" value="1" />
+   <opt name="off" value="0" />
+   <opt name="test" value="-1" />
+</cmd>
+<cmd name="alt_flaps_te_outbd" type="1" dataref="B742/OVHD/alt_flaps_TE_sw_outbd" pilot_head="OVERHEAD" >
+   <opt name="down" value="1" />
+   <opt name="up" value="1" />
+   <opt name="off" value="0" />
+</cmd>
+<cmd name="body_gr_steer_cap" type="1" dataref="B742/OVHD/body_gear_steer_cap" pilot_head="OVERHEAD" >
+   <opt name="close" value="0" />
+   <opt name="open" value="1" />
+</cmd>
+<cmd name="window_heat_sw_1L" type="1" dataref="B742/OVHD/window_heat_sw_1L" pilot_head="OVERHEAD" >
+   <opt name="on" value="1" />
+   <opt name="ovrd" value="-1" />
+   <opt name="off" value="0" />
+</cmd>
+<cmd name="body_gr_steer_sw" type="1" dataref="B742/OVHD/body_gear_steer_sw" pilot_head="OVERHEAD" >
+   <opt name="arm" value="1" />
+   <opt name="disarm" value="0" />
+</cmd>
+<cmd name="window_heat_power_lights" type="1" dataref="B742/OVHD/window_heat_power_lights_button" pilot_head="OVERHEAD" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="apu_gen2_close_sw" type="1" dataref="B742/AUX_PWR/APU_GEN2_close_sw" pilot_head="FE-1" >
+   <opt name="close" value="1" />
+   <opt name="off" value="0" />
+   <opt name="trip" value="-1" />
+</cmd>
+<cmd name="emerg_lights_cap" type="1" dataref="B742/OVHD/emerg_lights_cap" pilot_head="OVERHEAD" >
+   <opt name="close" value="0" />
+   <opt name="open" value="1" />
+</cmd>
+<cmd name="anti_skid_cap" type="1" dataref="B742/OVHD/anti_skid_on_off_cap" pilot_head="OVERHEAD" >
+   <opt name="close" value="0" />
+   <opt name="open" value="1" />
+</cmd>
+<cmd name="pack_valves" type="2" dataref="B742/AIR_COND/pack_valves_rotary" size_a="3" pilot_head="FE-2" >
+   <opt name="close" value="0" />
+   <opt name="1/2" value="0.5" />
+   <opt name="open" value="1" />
+</cmd>
+<cmd name="alt_flaps_te_inbd" type="1" dataref="B742/OVHD/alt_flaps_TE_sw_inbd" pilot_head="OVERHEAD" >
+   <opt name="down" value="1" />
+   <opt name="up" value="1" />
+   <opt name="off" value="0" />
+</cmd>
+<cmd name="gasper" type="1" dataref="B742/AIR_COND/gasper_on_sw" pilot_head="FE-2" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="battery_cap" type="1" dataref="B742/ELEC/battery_cap" pilot_head="FE-1" >
+   <opt name="close" value="0" />
+   <opt name="open" value="1" />
+</cmd>
+<cmd name="fire_detect_sw" type="1" dataref="B742/FIRE/fire_test_sw_both" >
+   <opt name="firetest" value="1" />
+   <opt name="off" value="0" />
+   <opt name="faulttest" value="-1" />
+</cmd>
+<cmd name="battery" type="1" dataref="B742/ELEC/battery_sw" pilot_head="FE-1" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="AUX_power_bus1" type="1" dataref="B742/FE_lamps/AUX_power_on_bus_1" readonly="1" pilot_head="FE-1" >
+</cmd>
+<cmd name="compass_sync" type="2" dataref="B742/OVHD/compass_sync_knob_deg" size_a="2" pilot_head="OVERHEAD" >
+</cmd>
+<cmd name="wheel_fire_test" type="1" dataref="B742/OVHD/wheel_well_fire_test_button" pilot_head="OVERHEAD" >
+   <opt name="push" value="1" />
+   <opt name="release" value="0" />
+</cmd>
+<cmd name="pack_meters" type="3" dataref="B742/AIR_COND/pack_button" size_a="3" default="1" pilot_head="FE-2" >
+   <opt name="pack2" value="2" />
+   <opt name="pack1" value="1" />
+   <opt name="pack3" value="3" />
+</cmd>
+<cmd name="apu_squib_test" type="1" dataref="B742/APU/squib_test_sw" pilot_head="FE-1" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="nacelle_temp_sw" type="2" dataref="B742/FIRE/nacelle_temp_sw" size_a="4" >
+   <opt name="b" value="1" />
+   <opt name="both" value="0" />
+   <opt name="a" value="-1" />
+</cmd>
+<cmd name="pack_controls" type="2" dataref="B742/AIR_COND/pack_control_sw" size_a="3" pilot_head="FE-2" >
+   <opt name="man" value="0" />
+   <opt name="auto" value="1" />
+</cmd>
+<cmd name="stall_warning" type="1" dataref="B742/OVHD/stall_warn_sw" pilot_head="OVERHEAD" >
+   <opt name="htroff" value="1" />
+   <opt name="test" value="-1" />
+   <opt name="normal" value="0" />
+</cmd>
+<cmd name="radio_master_n2" type="1" dataref="B742/OVHD/radio_master_bus_NO2_on" pilot_head="OVERHEAD" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="apu_test_B" type="1" dataref="B742/APU/APU_fire_test_B" pilot_head="FE-1" >
+   <opt name="fault" value="-1" />
+   <opt name="off" value="0" />
+   <opt name="fire" value="1" />
+</cmd>
+<cmd name="dc_meter_sws" type="3" dataref="B742/ELEC/DC_meter_buttons" size_a="6" default="3" pilot_head="FE-1" >
+   <opt name="tr2" value="5" />
+   <opt name="batt" value="3" />
+   <opt name="esstr" value="2" />
+   <opt name="tr3" value="6" />
+   <opt name="tr1" value="4" />
+   <opt name="apubat" value="1" />
+</cmd>
+<cmd name="heat_mode" type="2" dataref="B742/AIR_COND/heat_mode_sel" size_a="5" pilot_head="FE-2" >
+</cmd>
+<cmd name="ins_1_right_txt" type="1" dataref="B742/INS1/right_text_disp" readonly="1" pilot_head="INS12" >
+</cmd>
+<cmd name="radio_master_ess" type="1" dataref="B742/OVHD/radio_master_bus_ESS_on" pilot_head="OVERHEAD" >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="isolation_valves" type="2" dataref="B742/AIR_COND/pack_isolation_valves" size_a="2" pilot_head="FE-2" >
+   <opt name="close" value="0" />
+   <opt name="1/2" value="0.5" />
+   <opt name="open" value="1" />
+</cmd>
+<cmd name="apu_gen2_trip_sw" type="1" dataref="B742/AUX_PWR/APU_GEN2_trip_sw" pilot_head="FE-1" >
+   <opt name="close" value="1" />
+   <opt name="off" value="0" />
+   <opt name="trip" value="-1" />
+</cmd>
+<cmd name="window_heat_sw_1R" type="1" dataref="B742/OVHD/window_heat_sw_1R" pilot_head="OVERHEAD" >
+   <opt name="on" value="1" />
+   <opt name="ovrd" value="-1" />
+   <opt name="off" value="0" />
+</cmd>
+<cmd name="window_heat_gard" type="1" dataref="B742/OVHD/window_heat_limiter" pilot_head="OVERHEAD" >
+   <opt name="off" value="1" />
+   <opt name="on" value="0" />
+</cmd>
+<cmd name="fire_detectA_sw" type="1" dataref="B742/FIRE/fire_test_sw_A" >
+   <opt name="firetest" value="1" />
+   <opt name="off" value="0" />
+   <opt name="faulttest" value="-1" />
+</cmd>
+<cmd name="mach_test" type="1" dataref="B742/OVHD/mach_as_warn_test_sw" pilot_head="OVERHEAD" >
+   <opt name="test" value="1" />
+   <opt name="normal" value="0" />
+</cmd>
+<cmd name="alt_flaps_le" type="2" dataref="B742/OVHD/alt_flaps_LE_sw" size_a="4"  >
+   <opt name="down" value="1" />
+   <opt name="up" value="-1" />
+   <opt name="off" value="0" />
+</cmd>
+<cmd name="trim_air" type="1" dataref="B742/AIR_COND/trim_air_sw" pilot_head="FE-2" >
+   <opt name="close" value="0" />
+   <opt name="open" value="1" />
+</cmd>
+<cmd name="deck_door" type="1" dataref="B742/OVHD/flt_dk_door_rel" pilot_head="OVERHEAD" >
+   <opt name="close" value="0" />
+   <opt name="open" value="1" />
+</cmd>
+<cmd name="wing_LE_overheat_test" type="1" dataref="B742/FE/wing_LE_ovht_test_sw" pilot_head="FE-2" >
+   <opt name="sys1" value="1" />
+   <opt name="off" value="0" />
+   <opt name="sys2" value="-1" />
+</cmd>
+<cmd name="wing_LE_overheat_L" type="1" dataref="B742/FE/wing_LE_ovht_sw_L" pilot_head="FE-2" >
+   <opt name="sys1" value="1" />
+   <opt name="both" value="0" />
+   <opt name="sys2" value="-1" />
+</cmd>
+<cmd name="wing_LE_overheat_R" type="1" dataref="B742/FE/wing_LE_ovht_sw_R" pilot_head="FE-2" >
+   <opt name="sys1" value="1" />
+   <opt name="both" value="0" />
+   <opt name="sys2" value="-1" />
+</cmd>
+
+<cmd name="brake_temp_test" type="1" dataref="B742/FE/brake_temp_test_button" pilot_head="FE-2" >
+   <opt name="on" value="1" />
+   <opt name="off" value="0" />
+</cmd>
+<cmd name="EFDARS_lamp_test" type="1" dataref="B742/EFDARS/lamp_test_button" pilot_head="FE-2" >
+   <opt name="on" value="1" />
+   <opt name="off" value="0" />
+</cmd>
+
+<cmd name="brake_temp_sw" type="3" dataref="B742/FE/brake_temp_buttons"  size_a="4" default="1" pilot_head="FE-2" >
+   <opt name="LF" value="1" />
+   <opt name="RF" value="2" />
+   <opt name="LR" value="3" />
+   <opt name="RR" value="4" />
+</cmd>
+
+<cmd name="askid_lamp_test" type="1" dataref="B742/FE/antiskid_ldg_test_sw" pilot_head="FE-2" >
+   <opt name="prim" value="-1" />
+   <opt name="off" value="0" />
+   <opt name="alt" value="1" />
+</cmd>
+
+<cmd name="water_gau_butt" type="1" dataref="B742/FE/potable_water_press_button"  >
+   <opt name="off" value="0" />
+   <opt name="read" value="1" />
+</cmd>
+
+<cmd name="gages_test_butt" type="1" dataref="B742/FUEL/gages_press_test_button"  >
+   <opt name="off" value="0" />
+   <opt name="test" value="1" />
+</cmd>
+
+<cmd name="water_gau" type="1" dataref="B742/FE/potable_water_gau_ratio" pilot_head="FE-2" readonly="1" />
+
+<cmd name="landing_gear_sw" type="3" dataref="B742/FE/landing_gear_buttons"  size_a="6" default="1" >
+   <opt name="gearprim" value="1" />
+   <opt name="gearalt" value="2" />
+   <opt name="tiltprim" value="3" />
+   <opt name="tiltalt" value="4" />
+   <opt name="doorprim" value="5" />
+   <opt name="dooralt" value="6" />
+</cmd>   
+
+<cmd name="reset_fuel" type="1" dataref="B742/FUEL/fuel_used_reset_button"  >
+   <opt name="off" value="0" />
+   <opt name="reset" value="1" />
+</cmd>
+
+<cmd name="fuel_heat_sw" type="2" dataref="B742/FUEL/fuel_heat_sw" size_a="4"  >
+   <opt name="on" value="1" />
+   <opt name="off" value="0" />
+   <opt name="auto" value="-1" />
+</cmd>
+
+<cmd name="fuel_crossfeed_valves" type="2" dataref="B742/FUEL/fuel_crossfeed_valve_rot" size_a="6"  >
+   <opt name="open" value="1" />
+   <opt name="close" value="0" />
+</cmd>
+
+<cmd name="fuel_boost_pump" type="2" dataref="B742/FUEL/fuel_boost_pump_sw" size_a="10"  >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+
+<cmd name="hyd_qty_check" type="1" dataref="B742/HYD/QTY_test_button"  >
+   <opt name="off" value="0" />
+   <opt name="test" value="1" />
+</cmd>
+
+<cmd name="air_pump_sw" type="2" dataref="B742/HYD/air_pump_sw" size_a="4"  >
+   <opt name="off" value="0" />
+   <opt name="auto" value="1" />
+   <opt name="continuous" value="-1" />
+</cmd>
+
+<cmd name="elect_pump_cap" type="1" dataref="B742/HYD/elec_pump_sys4_cap"  >
+   <opt name="close" value="0" />
+   <opt name="open" value="1" />
+</cmd>
+
+<cmd name="elect_pump4" type="1" dataref="B742/HYD/elec_pump_sys4_sw"  >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+
+
+
+<cmd name="light_front_panel" type="1" dataref="B742/cockpit_light/front_panel"  />
+<cmd name="light_front_left_big_panel" type="1" dataref="B742/cockpit_light/front_left_big_panel"  />
+<cmd name="light_front_left_panel" type="1" dataref="B742/cockpit_light/front_left_panel"  />
+<cmd name="light_map_left_panel" type="1" dataref="B742/cockpit_light/map_left_panel"  />
+
+<cmd name="light_main_panel_bkgr" type="1" dataref="B742/cockpit_light/main_panel_bkgr"  />
+<cmd name="light_ovhd" type="1" dataref="B742/cockpit_light/ovhd"  />
+<cmd name="light_dome" type="1" dataref="B742/cockpit_light/dome"  />
+
+<cmd name="light_front_right_big_panel" type="1" dataref="B742/cockpit_light/front_right_big_panel"  />
+<cmd name="light_front_right_panel" type="1" dataref="B742/cockpit_light/front_right_panel"  />
+<cmd name="light_map_right_panel" type="1" dataref="B742/cockpit_light/map_right_panel"  />
+
+<cmd name="light_control_stand_panel" type="1" dataref="B742/cockpit_light/control_stand_panel"  />
+<cmd name="light_center_fwd_panel" type="1" dataref="B742/cockpit_light/center_fwd_panel"  />
+
+<cmd name="light_FE_panel" type="1" dataref="B742/cockpit_light/FE_panel"  />
+<cmd name="light_FE_panel_bkgrd" type="1" dataref="B742/cockpit_light/FE_panel_bkgrd"  />
+<cmd name="light_FE_crkt_brk_ovhd" type="1" dataref="B742/cockpit_light/FE_crkt_brk_ovhd"  />
+<cmd name="light_FE_crkt_brk_main" type="1" dataref="B742/cockpit_light/FE_crkt_brk_main"  />
+<cmd name="light_FE_panel_map" type="1" dataref="B742/cockpit_light/FE_panel_map"  />
+
+<cmd name="light_obs_panel" type="1" dataref="B742/cockpit_light/obs_panel"  />
+<cmd name="light_OBS_spot_2" type="1" dataref="B742/cockpit_light/OBS_spot_2"  >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+<cmd name="light_OBS_spot_1" type="1" dataref="B742/cockpit_light/OBS_spot_1"  >
+   <opt name="off" value="0" />
+   <opt name="on" value="1" />
+</cmd>
+
+
+
+
+
+
+<pilot_head name="cons-1" x="-0.016315361484885" y="5.7038559913635" z="-25.224563598633" psi="359.625" the="-56.333408355713" /> 
+<pilot_head name="FE-1" x="-0.060808107256889" y="5.7953066825867" z="-24.979248046875" psi="91.875007629395" the="5.6665844917297" /> 
+<pilot_head name="FE-elec" x="-0.19431580603123" y="5.7858695983887" z="-24.983039855957" psi="93.187507629395" the="2.4999165534973" /> 
+
+<pilot_head name="FE-ovh" x="-0.065899588167667" y="5.4850063323975" z="-25.206399917603" psi="5.0625009536743" the="42.507808685303" /> 
+<pilot_head name="FE-rovh" x="0.2250852137804" y="5.6555218696594" z="-25.255268096924" psi="1.1250010728836" the="34.174480438232" /> 
+<pilot_head name="FE-insovh" x="-0.034699011594057" y="5.5690960884094" z="-25.296203613281" psi="9.1401996612549" the="51.389240264893" /> 
+<pilot_head name="FE-APU" x="-0.047375783324242" y="5.7560324668884" z="-25.094905853271" psi="92.01033782959" the="31.302114486694" /> 
+<pilot_head name="FE-PACK" x="-0.10756461322308" y="5.7152152061462" z="-24.596220016479" psi="83.273719787598" the="18.811328887939" /> 
+
+<pilot_head name="FE-FIRE" x="0.097769819200039" y="5.8087649345398" z="-24.499435424805" psi="107.83622741699" the="22.134733200073" /> 
+<pilot_head name="FE-FIRE2" x="0.097769819200039" y="5.8087649345398" z="-24.499435424805" psi="124.71122741699" the="-5.8652639389038" /> 
+<pilot_head name="FE-OVH-H" x="0.28427323698997" y="5.541651725769" z="-25.571510314941" psi="2.0625" the="54.174461364746" /> 
+<pilot_head name="FE-FUEL" x="-0.19478641450405" y="5.7729268074036" z="-24.709884643555" psi="91.523742675781" the="-21.865306854248" />
+<pilot_head name="FE-HYD" x="-0.00069163180887699" y="5.6870050430298" z="-24.390985488892" psi="90.398727416992" the="4.9634103775024" /> 
+
+</interfaces>
